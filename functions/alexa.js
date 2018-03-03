@@ -1,5 +1,6 @@
 const admin = require("firebase-admin");
 const carParkCostIntent = require("./carParkCostIntent");
+const cityCouncilEventsIntent = require('./cityCouncilEventsIntent');
 
 function createName(name) {
     if (name.toLowerCase().indexOf("parkhaus") !== -1) {
@@ -145,6 +146,8 @@ function processIntents(req, res, shouldEndSession) {
     } else if (request.type === "IntentRequest") {
         if (request.intent.name === "CarParkCost") {
             carParkCostIntent.getCarParkCost(request, res);
+        } else if (request.intent.name === "GetTownCouncilEventIntent") {
+            cityCouncilEventsIntent.getNextEvent(request, res, shouldEndSession);
         } else if (request.intent.name === "GetCarParks") {
             getCarParks((message) => {
                 const result = {
