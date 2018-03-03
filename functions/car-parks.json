@@ -1,0 +1,68 @@
+[
+  {
+    "name": "City Parkhaus experimenta",
+    "id": "city-parkhaus-experimenta",
+    "scrapeLabel": "City-Parkhaus Experimenta",
+    "access": [
+      "Bahnhofstraße 6"
+    ]
+  },
+  {
+    "name": "City Parkhaus am Bollwerksturm",
+    "id": "city-parkhaus-am-bollwerksturm",
+    "scrapeLabel": "Am Bollwerksturm",
+    "access": [
+      "Mannheimer Straße 25"
+    ]
+  },
+  {
+    "name": "Am Wollhaus",
+    "id": "am-wollhaus",
+    "scrapeLabel": "Wollhaus",
+    "access": [
+      "Allee"
+    ]
+  },
+  {
+    "name": "Stadtgalerie",
+    "id": "stadtgalerie",
+    "scrapeLabel": "Stadtgalerie",
+    "access": [
+      "Allerheiligenstraße",
+      "Deutschhofstraße"
+    ]
+  },
+  {
+    "name": "Harmonie",
+    "id": "harmonie",
+    "scrapeLabel": "Harmonie",
+    "access": [
+      "Gymnasiumstraße"
+    ]
+  },
+  {
+    "name": "Käthchenhof",
+    "id": "kaethchenhof",
+    "scrapeLabel": "Käthchenhof",
+    "access": [
+      "Gerberstraße"
+    ]
+  },
+  {
+    "name": "Theaterforum K3",
+    "id": "theaterforum-k3",
+    "scrapeLabel": "Theaterforum K3",
+    "access": [
+      "Mannheimer Straße",
+      "Gartenstraße"
+    ]
+  },
+  {
+    "name": "Kiliansplatz",
+    "id": "kiliansplatz",
+    "scrapeLabel": "Kiliansplatz",
+    "access": [
+      "Kilianstraße"
+    ]
+  }
+]
