@@ -1,5 +1,5 @@
 const alexaUtils = require("./alexaUtils");
-const moment = require("moment-timezone").tz("Europe/Berlin");
+const moment = require("moment-timezone");
 const carParkCostCalculator = require("./car-park-cost-calculator");
 
 function createTextResponse(carPark, duration, startTime, response) {
@@ -54,7 +54,7 @@ function getCarParkCost(request, res) {
     console.log("Intent: ", JSON.stringify(request.intent));
 
     if (request.dialogState === "COMPLETED" || request.dialogState === "IN_PROGRESS") {
-        let startTimeValue = moment();
+        let startTimeValue = moment().tz("Europe/Berlin");
         let durationValue = moment.duration(60, "minutes");
         const slots = request.intent.slots;
         const duration = slots.duration;
@@ -63,7 +63,7 @@ function getCarParkCost(request, res) {
         }
         const startTime = slots.startTime;
         if (startTime.value) {
-            startTimeValue = moment("HH:mm", startTime.value);
+            startTimeValue = moment("HH:mm", startTime.value).tz("Europe/Berlin");
         }
         console.log("StartTime: ", startTimeValue);
         console.log("Duration: ", durationValue);
