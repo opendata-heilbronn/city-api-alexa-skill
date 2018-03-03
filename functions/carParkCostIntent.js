@@ -1,6 +1,6 @@
 const alexaUtils = require("./alexaUtils");
-const moment = require("moment");
-const carParks = require("./car-parks.json");
+const moment = require("moment-timezone").tz("Europe/Berlin");
+const carParkCostCalculator = require("./car-park-cost-calculator");
 
 function createTextResponse(carPark, duration, startTime, response) {
     const durationHours = duration.hours();
@@ -71,13 +71,17 @@ function getCarParkCost(request, res) {
 
         const carParkValue = findResolution(carPark.resolutions.resolutionsPerAuthority);
         if (carParkValue) {
+
+            const costResponse = carParkCostCalculator.getCarParkCost(carParkValue.value.id, startTimeValue, durationValue.asMinutes());
+            
             res.send(alexaUtils.createResult(createTextResponse(carParkValue,
-                durationValue, startTimeValue, {cost: 2.5}), true));
+                durationValue, startTimeValue, costResponse), true));
         }
         else {
             res.send(alexaUtils.createResult("Dieses Parkhaus ist unbekannt", true));
         }
     } else {
+        
         res.send(alexaUtils.createDialog());
     }
 }

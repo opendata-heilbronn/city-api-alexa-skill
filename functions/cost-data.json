@@ -1,0 +1,545 @@
+{
+  
+    
+  "city-parkhaus-experimenta": {
+    "max": 12,
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 6,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 3,
+                "unit": 360
+              }
+            ]
+          },
+          {
+            "from": 6,
+            "to": 18,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 720
+                },
+                "fee": 1.5,
+                "unit": 60
+              }
+            ]
+          },
+          {
+            "from": 18,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 3,
+                "unit": 360
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "city-parkhaus-am-bollwerksturm": {
+    "max": 12,
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 6,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 3,
+                "unit": 360
+              }
+            ]
+          },
+          {
+            "from": 6,
+            "to": 18,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 720
+                },
+                "fee": 1.5,
+                "unit": 60
+              }
+            ]
+          },
+          {
+            "from": 18,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 3,
+                "unit": 360
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "am-wollhaus": {
+    "max": 12,
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 180
+                },
+                "fee": 0.5,
+                "unit": 20
+              },
+              {
+                "parkTime": {
+                  "from": 180,
+                  "to": 1440
+                },
+                "fee": 1.5,
+                "unit": 60
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "stadtgalerie":{
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 2,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 120
+                },
+                "fee": 2.5,
+                "unit": 120
+              }
+            ]
+          },
+          {
+            "from": 2,
+            "to": 21,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 60
+                },
+                "fee": 1,
+                "unit": 60
+              },
+              {
+                "parkTime": {
+                  "from": 61,
+                  "to": 120
+                },
+                "fee": 1.2,
+                "unit": 60
+              },
+              {
+                "parkTime": {
+                  "from": 121,
+                  "to": 1020
+                },
+                "fee": 1.5,
+                "unit": 60
+              }
+            ]
+          },
+          {
+            "from": 21,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 180
+                },
+                "fee": 2.5,
+                "unit": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "harmonie":{
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 8,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 480
+                },
+                "fee": 3,
+                "unit": 480
+              }
+            ]
+          },
+          {
+            "from": 8,
+            "to": 18,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 120
+                },
+                "fee": 0.5,
+                "unit": 20
+              },
+              {
+                "parkTime": {
+                  "from": 121,
+                  "to": 480
+                },
+                "fee": 1.5,
+                "unit": 60
+              }
+            ]
+          },
+          {
+            "from": 18,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 240
+                },
+                "fee": 3,
+                "unit": 240
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "theaterforum-k3":{
+    "max": 12,
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 6,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 4.5,
+                "unit": 360
+              }
+            ]
+          },
+          {
+            "from": 6,
+            "to": 19,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 780
+                },
+                "fee": 1.5,
+                "unit": 60
+              }
+            ]
+          },
+          {
+            "from": 19,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 300
+                },
+                "fee": 4.5,
+                "unit": 300
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "kaethchenhof": {
+    "max": 15,
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 1440
+                },
+                "fee": 0.5,
+                "unit": 20
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "kiliansplatz": {
+    "costs": [
+      {
+        "dayOfWeek": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sun"],
+        "cost": [
+          {
+            "from": 0,
+            "to": 6,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 5,
+                "unit": 360
+              }
+            ]
+          },
+          {
+            "from": 6,
+            "to": 20,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 99
+                },
+                "fee": 1.5,
+                "unit": 50
+              },
+              {
+                "parkTime": {
+                  "from": 100,
+                  "to": 199
+                },
+                "fee": 3,
+                "unit": 99
+              },
+              {
+                "parkTime": {
+                  "from": 200,
+                  "to": 299
+                },
+                "fee": 3,
+                "unit": 99
+              },
+              {
+                "parkTime": {
+                  "from": 300,
+                  "to": 1440
+                },
+                "fee": 1.5,
+                "unit": 50
+              }
+            ]
+          },
+          {
+            "from": 20,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 240
+                },
+                "fee": 5,
+                "unit": 240
+              }
+            ]
+          }
+        ]
+      },
+      {  
+        "dayOfWeek": [
+          "Sat"
+        ],
+        "cost": [
+          {
+            "from": 0,
+            "to": 6,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 360
+                },
+                "fee": 5,
+                "unit": 360
+              }
+            ]
+          },
+          {
+            "from": 6,
+            "to": 20,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 99
+                },
+                "fee": 2,
+                "unit": 50
+              },
+              {
+                "parkTime": {
+                  "from": 100,
+                  "to": 199
+                },
+                "fee": 4,
+                "unit": 99
+              },
+              {
+                "parkTime": {
+                  "from": 200,
+                  "to": 299
+                },
+                "fee": 4,
+                "unit": 99
+              },
+              {
+                "parkTime": {
+                  "from": 300,
+                  "to": 1440
+                },
+                "fee": 2,
+                "unit": 50
+              }
+            ]
+          },
+          {
+            "from": 20,
+            "to": 24,
+            "fees": [
+              {
+                "parkTime": {
+                  "from": 0,
+                  "to": 240
+                },
+                "fee": 5,
+                "unit": 240
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

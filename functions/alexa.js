@@ -136,7 +136,7 @@ function processIntents(req, res, shouldEndSession) {
             "response": {
                 "outputSpeech": {
                     "type": "PlainText",
-                    "text": "Welche Informationen zur Parkplätzen möchtest du haben?"
+                    "text": "Welche Informationen möchtest du haben?"
                 },
                 "shouldEndSession": false
             }
