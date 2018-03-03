@@ -11,7 +11,7 @@ const getNextEventForAssembly = (assembly) => {
     }
     const now = moment.now();
     const assemblyEvents = events[assembly].sort((a, b) => a - b);
-    const nextEvent = assemblyEvents.find(event => moment(event).isAfter(now));
+    const nextEvent = assemblyEvents.find(event => moment(event * 1000).isAfter(now));
     if (!nextEvent) {
         return {
             state: 'NO_NEXT_EVENT'
@@ -19,7 +19,7 @@ const getNextEventForAssembly = (assembly) => {
     } else {
         return {
             state: 'FOUND',
-            formattedDate: moment(nextEvent).format("dddd, [den] D. MMMM")
+            formattedDate: moment(nextEvent * 1000).format("dddd, [den] D. MMMM")
         };
     }
 };
