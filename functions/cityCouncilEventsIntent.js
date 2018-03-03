@@ -4,13 +4,13 @@ const events = require("./city-council-events.json");
 moment.locale('de');
 
 const getNextEventForAssembly = (assembly) => {
-    if (!events[assembly]) {
+    if (!events[assembly.id]) {
         return {
             state: 'NOT_AVAILABLE'
         };
     }
     const now = moment.now();
-    const assemblyEvents = events[assembly].sort((a, b) => a - b);
+    const assemblyEvents = events[assembly.id].sort((a, b) => a - b);
     const nextEvent = assemblyEvents.find(event => moment(event * 1000).isAfter(now));
     if (!nextEvent) {
         return {
